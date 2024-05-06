@@ -2,7 +2,7 @@
 layout: member
 category: staff
 title: Berkay Arslan
-image: Berkay-Arslan.jpg
+image: Berkay-Arslan.png
 role: MS Student
 email: berkay.arslan@bogazici.edu.tr
 permalink: 'team/berkay-arslan'
