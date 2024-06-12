@@ -1,6 +1,6 @@
 ---
 title: "Gallery"
-layout: homelay
+layout: gallery
 excerpt: "TESLab - Gallery"
 sitemap: false
 permalink: /gallery/
