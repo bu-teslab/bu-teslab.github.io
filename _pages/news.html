@@ -14,15 +14,15 @@ permalink: /news.html
             <h4 class="mt-0 mb-1">{{ article.title }}</h4>
             <p><small>{{ article.date }}</small></p>
             {{ article.content }}
+            {% if article.elements %}
+                <br></br>
+                <ul class="list-unstyled">
+                    {% for elements in article.elements %}
+                        <li>{{elements}}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
             </div>
         </li>
-        {% if article.elements %}
-            <br></br>
-            <ul class="list-unstyled">
-                {% for elements in article.elements %}
-                    <li>{{elements}}</li>
-                {% endfor %}
-            </ul>
-        {% endif %}
     {% endfor %}
 </ul>
