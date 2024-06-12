@@ -16,14 +16,13 @@ permalink: /news.html
             {{ article.content }}
             </div>
         </li>
-        <p>
+        <br></br>
         {% if article.elements %}
             <ul class="list-unstyled">
                 {% for elements in article.elements %}
                     <li>{{elements}}</li>
                 {% endfor %}
             </ul>
-        </p>
         {% endif %}
     {% endfor %}
 </ul>
