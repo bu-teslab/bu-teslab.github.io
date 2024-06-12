@@ -1,7 +1,7 @@
 ---
 title: "News"
 layout: default
-excerpt: "RT2 Lab at Institut Curie"
+excerpt: "TESLab - News"
 sitemap: false
 permalink: /news.html
 ---
@@ -16,5 +16,14 @@ permalink: /news.html
             {{ article.content }}
             </div>
         </li>
+        {% if article.elements %}
+        <div class="row">
+            <ul class="list-unstyled">
+                {% for elements in article.elements %}
+                    <li>{{elements}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
     {% endfor %}
 </ul>
