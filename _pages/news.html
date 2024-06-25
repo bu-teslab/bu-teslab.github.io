@@ -15,6 +15,7 @@ permalink: /news.html
             <p><small>{{ article.date }}</small></p>
             {{ article.content }}
             </div>
+            <p></p>
             {% if article.items %}
                 <ul class="list-unstyled">
                     {% for item in article.items %}
@@ -22,6 +23,7 @@ permalink: /news.html
                     {% endfor %}
                 </ul>
             {% endif %}
+            </p>
         </li>
     {% endfor %}
 </ul>
